@@ -1,3 +1,5 @@
+
+
 html,
 body,
 .overlay {
@@ -5,6 +7,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Jura";
 }
 
 body {
@@ -22,14 +25,12 @@ body {
 h1 {
   color: rgba(255, 255, 255, .8);
   text-align: center;
-  font-family: "Jura";
   font-size: 2.3em;
 }
 
 h2 {
   color: rgba(255, 0, 0, .7);
   text-align: center;
-  font-family: "Jura";
   font-size: 2.3em;
   margin-top: -.5em;
 }
@@ -71,21 +72,9 @@ h2 {
 
 .title {
   color: rgba(0, 250, 250, .8);
-  font-family: "Jura";
   font-weight: bold;
   font-size: 1.8em;
 }
-/*
-.hand {
-  width: 50%;
-  height: 6px;
-  background: yellow;
-  position: absolute;
-  top: 50%;
-  transform-origin: 100%;
-  border-radius: 4px;
-}
-*/
 
 .hour {
   width: 50%;
@@ -101,7 +90,7 @@ h2 {
 .minute {
   width: 50%;
   height: 6px;
-  background: rgba(255, 255, 0, .8);
+  background: linear-gradient(to right, rgba(255, 255, 0, .9), rgba(0, 0, 0, 0));
   position: absolute;
   top: 50%;
   transform-origin: 100%;
@@ -132,23 +121,30 @@ h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .clocks_row1 {
     flex-direction: column;
-    margin-top: 20em;
+    margin-top: 25em;
   }
 
   .clocks_row2 {
     flex-direction: column;
     margin-top: 20em;
+    margin-bottom: 10em;
   }
 
   .titleWrap {
     margin-top: 4em;
   }
 
-  .rowBox {
+  .overlay {
+    background: url('images/worldview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
+  .body {
+    background: rgba(0, 0, 0, 1);
   }
 
 }
